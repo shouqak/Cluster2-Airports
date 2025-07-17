@@ -1,7 +1,7 @@
 import { useEffect, useLayoutEffect, useState } from "react";
 import NavBar from "../Admin/components/NavBar";
 import { Outlet } from "react-router";
-import Footer from "../components/Footer";
+import Footer from "../Admin/components/Footer";
 
 export function AdminLayout() {
   const [isDark, setIsDark] = useState(false);
