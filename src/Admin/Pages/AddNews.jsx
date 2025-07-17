@@ -34,8 +34,8 @@ export default function AddNews() {
     if (file) {
       try {
         const options = {
-          maxSizeMB: 0.1,
-          maxWidthOrHeight: 800,
+          maxSizeMB: 0.03,
+          maxWidthOrHeight: 600,
           useWebWorker: true,
         }
 
@@ -126,6 +126,7 @@ export default function AddNews() {
     } catch (err) {
       toast.error("Failed to save news. Please try again.")
       console.error("Error saving news:", err.message)
+      toast.error("Error saving news:", err.message)
     } finally {
       setLoading(false)
     }
