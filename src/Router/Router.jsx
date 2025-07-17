@@ -10,6 +10,7 @@ import Archivednews from "../Admin/Pages/Archivednews"
 import NewsDetails from "../Pages/NewsDetails"
 import { AdminLayout } from "../Utility/AdminLayout"
 import { HomeLayout } from "../Utility/HomeLayout"
+import ErorrPage from "../Pages/ErorrPage"
 
 export function Layout() {
   return (
@@ -31,6 +32,8 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <Home /> },
       { path: "detailNews/:id", element: <NewsDetails /> },
+            { path: "*", element: <ErorrPage/> },
+
     ],
   },
   {
@@ -41,6 +44,8 @@ const router = createBrowserRouter([
       { path: "/NewsForm", element: <AddNews /> },
       { path: "/NewsEdit/:id", element: <EditNews /> },
       { path: "/ArchivedNews", element: <Archivednews /> },
+      { path: "*", element: <ErorrPage/> },
+
     ],
   },
 ])

@@ -25,7 +25,7 @@ export default function FilterBar({
 
         <div className="flex flex-col sm:flex-row sm:justify-between gap-5">
           <div className="flex flex-wrap gap-2">
-            {["Operations", "HR", "Safety", "Events"].map((tag) => (
+            {["Operations", "HR", "Security", "Events"].map((tag) => (
               <button
                 key={tag}
                 onClick={() => setSelectedTag(tag === selectedTag ? null : tag)}
