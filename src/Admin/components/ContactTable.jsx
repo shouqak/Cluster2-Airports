@@ -12,25 +12,29 @@ export default function ContactTable() {
   const [showDeleteModal, setShowDeleteModal] = useState(false)
   const [selectedNews, setSelectedNews] = useState(null)
 
-  useEffect(() => {
-    const fetchNews = async () => {
+   useEffect(() => {
+    const fetchScheduledNews = async () => {
       try {
-        const response = await fetch(
+        const response = await axios.get(
           "https://6875177fdd06792b9c96ba28.mockapi.io/News"
         )
-        if (!response.ok) throw new Error("Failed to fetch news")
+        const data = response.data
 
-        const data = await response.json()
-        setContacts(data)
+        // فلترة الأخبار حسب الحالة "published" فقط
+        const scheduledNews = data.filter((item) => item.status === "published")
+
+        setContacts(scheduledNews)
       } catch (err) {
-        setError(err.message || "Something went wrong")
+        setError("Failed to load published news")
+        toast.error("Failed to load published news. Please try again.")
       } finally {
         setLoading(false)
       }
     }
 
-    fetchNews()
+    fetchScheduledNews()
   }, [])
+
 
   const handleDelete = async () => {
     try {
