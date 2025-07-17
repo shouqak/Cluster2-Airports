@@ -1,12 +1,22 @@
-# React + Vite
+# ✈️ Cluster2 Airports News Management Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A lightweight and responsive web application for managing and viewing company news, tailored for Cluster2 Airports. Built using **React**, **Tailwind CSS**, and modern frontend practices to ensure a clean, accessible, and branded experience.
 
-Currently, two official plugins are available:
+## 🧱 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🔐 **Admin Login** — Secure login for authorized users to manage news.
+- 📰 **News Dashboard** — Create, view, and delete news articles.
+- 🌙 **Dark Mode** — Toggle light/dark mode with smooth transitions.
+- 🔎 **Search & Filter** — Easily find relevant news by keywords or tags.
+- 📱 **Responsive Design** — Optimized for mobile, tablet, and desktop.
+- ✅ **Confirmation Dialogs** — Safe delete with confirmation prompts.
+- 🎨 **Themed UI** — Matches Cluster2 Airports branding.
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React** – UI library for building component-based interfaces
+- **Tailwind CSS** – Utility-first CSS framework for styling
+- **React Router** – Navigation and route management
+- **Framer Motion** – Animations and transitions
+
+
