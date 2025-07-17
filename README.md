@@ -20,3 +20,7 @@ A lightweight and responsive web application for managing and viewing company ne
 - **Framer Motion** – Animations and transitions
 
 
+##  AdminLogin 
+
+- **Email** – admin@admin.com
+- **password** – admin
